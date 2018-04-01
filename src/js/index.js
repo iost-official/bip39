@@ -1644,6 +1644,14 @@
             },
         },
         {
+            name: "IOS - IOS Coin",
+            segwitAvailable: false,
+            onSelect: function() {
+                network = bitcoinjs.bitcoin.networks.ioscoin;
+                setHdCoin(80);
+            },
+        },
+        {
             name: "JBS - Jumbucks",
             segwitAvailable: false,
             onSelect: function() {
