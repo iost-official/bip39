@@ -1,4 +1,4 @@
-# BIP39 Tool
+# BIP39 Tool with private phrase
 
 A tool for converting BIP39 mnemonic phrases to addresses and private keys.
 
@@ -8,7 +8,7 @@ https://iancoleman.io/bip39/
 
 ## Standalone offline version
 
-Download `bip39-standalone.html`
+Download `bip39-private-standalone.html`
 
 Open the file in a browser by double clicking it.
 
@@ -52,7 +52,7 @@ at 1PC9aZC4hNX2rmmrt7uHTfYAS3hRbph4UN
 
 ## Making changes
 
-Please do not make modifications to `bip39-standalone.html`, since they will
+Please do not make modifications to `bip39-private-standalone.html`, since they will
 be overwritten by `compile.py`.
 
 Make changes in `src/*`.
