@@ -85,6 +85,10 @@ body {
     padding: 2px;
     max-width: 320px;
 }
+.visual-privacy {
+    color: grey !important;
+    background-color: grey !important;
+}
 .more-info {
     cursor: help;
     border-bottom: 1px dashed #000;
