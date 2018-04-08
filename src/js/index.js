@@ -41,6 +41,7 @@
     DOM.entropyChecksum = DOM.entropyContainer.find(".checksum");
     DOM.entropyMnemonicLength = DOM.entropyContainer.find(".mnemonic-length");
     DOM.entropyFilterWarning = DOM.entropyContainer.find(".filter-warning");
+    DOM.privacyCheckbox = $("#visual-screen-privacy");
     DOM.phrase = $(".phrase");
     DOM.passphrase = $(".passphrase");
     DOM.generateContainer = $(".generate-container");
@@ -119,6 +120,7 @@
         DOM.useEntropy.on("change", setEntropyVisibility);
         DOM.entropy.on("input", delayedEntropyChanged);
         DOM.entropyMnemonicLength.on("change", entropyChanged);
+        DOM.privacyCheckbox.on("change", visualScreenPrivacySettingChaged);
         DOM.phrase.on("input", delayedPhraseChanged);
         DOM.passphrase.on("input", delayedPhraseChanged);
         DOM.generate.on("click", generateClicked);
@@ -305,6 +307,14 @@
         }
         else {
             hidePending();
+        }
+    }
+
+    function visualScreenPrivacySettingChaged(event) {
+        if (event.target.checked) {
+            $('.private-data').addClass('visual-privacy');
+        } else {
+            $('.private-data').removeClass('visual-privacy');
         }
     }
 

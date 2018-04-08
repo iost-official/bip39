@@ -133,6 +133,12 @@
                             </div>
                         </div>
                         <div class="form-group">
+                                <label for="phrase" class="col-sm-2 control-label">Hide Private Info</label>
+                                <div class="col-sm-10">
+                                    <input type="checkbox" id="visual-screen-privacy" class="phrase form-control" style="width: 30px;" />
+                                </div>
+                            </div>
+                        <div class="form-group">
                             <label class="col-sm-2 control-label">Mnemonic Language</label>
                             <div class="col-sm-10 languages">
                                 <div class="form-control no-border">
@@ -150,13 +156,13 @@
                         <div class="form-group">
                             <label for="phrase" class="col-sm-2 control-label">BIP39 Mnemonic</label>
                             <div class="col-sm-10">
-                                <textarea id="phrase" class="phrase form-control" data-show-qr></textarea>
+                                <textarea id="phrase" class="private-data phrase form-control" data-show-qr></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="passphrase" class="col-sm-2 control-label">BIP39 Passphrase (optional)</label>
                             <div class="col-sm-10">
-                                <textarea id="passphrase" class="passphrase form-control"></textarea>
+                                <textarea id="passphrase" class="private-data passphrase form-control"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
@@ -269,7 +275,7 @@
                                         <span>Account Extended Private Key</span>
                                     </label>
                                     <div class="col-sm-10">
-                                        <textarea id="account-xprv" type="text" class="account-xprv form-control" readonly data-show-qr></textarea>
+                                        <textarea id="account-xprv" type="text" class="private-data account-xprv form-control" readonly data-show-qr></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -429,7 +435,7 @@
                                             <span>Account Extended Private Key</span>
                                         </label>
                                         <div class="col-sm-10">
-                                            <textarea id="account-xprv" type="text" class="account-xprv form-control" readonly data-show-qr></textarea>
+                                            <textarea id="account-xprv" type="text" class="private-data account-xprv form-control" readonly data-show-qr></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -612,7 +618,7 @@
                             <input type="checkbox" class="use-bip38">
                             <span>Encrypt private keys using BIP38 and this password:</span>
                         </label>
-                        <input class="bip38-password">
+                        <input class="private-data bip38-password">
                         <span>Enabling BIP38 means each key will take several minutes to generate.</span>
                     </div>
                 </div>
